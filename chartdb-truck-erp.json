@@ -1,0 +1,1956 @@
+{
+  "id": "0",
+  "name": "Trucks ERP",
+  "createdAt": "2025-03-20T00:34:27.155Z",
+  "updatedAt": "2025-03-20T00:34:27.155Z",
+  "databaseType": "mysql",
+  "tables": [
+    {
+      "id": "1",
+      "name": "companies",
+      "x": 300.00000000000006,
+      "y": 533.0127018922193,
+      "fields": [
+        {
+          "id": "2",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742345237417
+        },
+        {
+          "id": "3",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345245043
+        },
+        {
+          "id": "4",
+          "name": "address",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345248145
+        },
+        {
+          "id": "5",
+          "name": "business_partner_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345272111
+        },
+        {
+          "id": "6",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356634982
+        },
+        {
+          "id": "7",
+          "name": "status",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345414037
+        },
+        {
+          "id": "8",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345471040
+        },
+        {
+          "id": "9",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345480025
+        }
+      ],
+      "indexes": [],
+      "color": "#42e0c0",
+      "createdAt": 1742345237417,
+      "isView": false,
+      "order": 3,
+      "diagramId": "1bvmjddu38oa",
+      "width": 257
+    },
+    {
+      "id": "10",
+      "name": "contacts",
+      "x": 700,
+      "y": 533.0127018922193,
+      "fields": [
+        {
+          "id": "11",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742345504568
+        },
+        {
+          "id": "12",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345517776
+        },
+        {
+          "id": "13",
+          "name": "phone",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345520186
+        },
+        {
+          "id": "14",
+          "name": "email",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345523840
+        },
+        {
+          "id": "15",
+          "name": "status",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345985152
+        },
+        {
+          "id": "16",
+          "name": "contact_type",
+          "type": {
+            "id": "enum",
+            "name": "enum"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742346000890,
+          "comments": "Encargado, Socio, Supervisor"
+        },
+        {
+          "id": "17",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345600928
+        },
+        {
+          "id": "18",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742345609335
+        }
+      ],
+      "indexes": [],
+      "color": "#c05dcf",
+      "createdAt": 1742345504568,
+      "isView": false,
+      "order": 4,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "19",
+      "name": "tractors",
+      "x": 100,
+      "y": 100,
+      "fields": [
+        {
+          "id": "20",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742344445399
+        },
+        {
+          "id": "21",
+          "name": "licence_plate",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344624145
+        },
+        {
+          "id": "22",
+          "name": "internal_identifier",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344632562
+        },
+        {
+          "id": "23",
+          "name": "company_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344645572
+        },
+        {
+          "id": "24",
+          "name": "brand_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344664610
+        },
+        {
+          "id": "25",
+          "name": "year",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344671208
+        },
+        {
+          "id": "26",
+          "name": "model",
+          "type": {
+            "id": "date",
+            "name": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344676308
+        },
+        {
+          "id": "27",
+          "name": "current_mileage",
+          "type": {
+            "id": "float",
+            "name": "float"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344679725
+        },
+        {
+          "id": "28",
+          "name": "serial_number",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742346614423
+        },
+        {
+          "id": "29",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344804812
+        },
+        {
+          "id": "30",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344815825
+        }
+      ],
+      "indexes": [],
+      "color": "#9ef07a",
+      "createdAt": 1742344445399,
+      "isView": false,
+      "order": 1,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "31",
+      "name": "trailers",
+      "x": 300.00000000000006,
+      "y": 1033.0127018922194,
+      "fields": [
+        {
+          "id": "32",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742346717646
+        },
+        {
+          "id": "33",
+          "name": "type",
+          "type": {
+            "id": "enum",
+            "name": "enum"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742346722381,
+          "comments": "Plana, Caja Seco, Refrigerado"
+        },
+        {
+          "id": "34",
+          "name": "company_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356050488
+        },
+        {
+          "id": "35",
+          "name": "year",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742356142267
+        },
+        {
+          "id": "36",
+          "name": "serial_number",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742356144856
+        },
+        {
+          "id": "37",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742356071910
+        },
+        {
+          "id": "38",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742356077747
+        }
+      ],
+      "indexes": [],
+      "color": "#c05dcf",
+      "createdAt": 1742346717646,
+      "isView": false,
+      "order": 5,
+      "diagramId": "1bvmjddu38oa",
+      "width": 224
+    },
+    {
+      "id": "39",
+      "name": "users",
+      "x": -323.60679774997897,
+      "y": 1239.1200757459828,
+      "fields": [
+        {
+          "id": "40",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742344140587
+        },
+        {
+          "id": "41",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344150435
+        },
+        {
+          "id": "42",
+          "name": "email",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344157133
+        },
+        {
+          "id": "43",
+          "name": "password",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344164583
+        },
+        {
+          "id": "44",
+          "name": "remember_token",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344237520
+        },
+        {
+          "id": "45",
+          "name": "email_verified_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344246454
+        },
+        {
+          "id": "46",
+          "name": "verified_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344170979
+        },
+        {
+          "id": "47",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344189419
+        },
+        {
+          "id": "48",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742344207492
+        }
+      ],
+      "indexes": [],
+      "color": "#b067e9",
+      "createdAt": 1742344140587,
+      "isView": false,
+      "order": 0,
+      "width": 224,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "49",
+      "name": "brands",
+      "x": 500,
+      "y": 100,
+      "fields": [
+        {
+          "id": "50",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742344830784
+        },
+        {
+          "id": "51",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344839286
+        },
+        {
+          "id": "52",
+          "name": "brand_logo",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742345192784
+        },
+        {
+          "id": "53",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742344847305
+        },
+        {
+          "id": "54",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742346197950
+        }
+      ],
+      "indexes": [],
+      "color": "#ff9f74",
+      "createdAt": 1742344830784,
+      "isView": false,
+      "order": 2,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "55",
+      "name": "tractor_trailer_assignments",
+      "x": 700,
+      "y": 1033.0127018922194,
+      "fields": [
+        {
+          "id": "56",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742356275430
+        },
+        {
+          "id": "57",
+          "name": "tractor_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356296571
+        },
+        {
+          "id": "58",
+          "name": "trailer_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356303822
+        },
+        {
+          "id": "59",
+          "name": "assigned_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356307903
+        },
+        {
+          "id": "60",
+          "name": "unassigned_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356315661
+        },
+        {
+          "id": "61",
+          "name": "status",
+          "type": {
+            "id": "bool",
+            "name": "bool"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356356512
+        },
+        {
+          "id": "62",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356328822
+        },
+        {
+          "id": "63",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742356337305
+        }
+      ],
+      "indexes": [],
+      "color": "#42e0c0",
+      "createdAt": 1742356275430,
+      "isView": false,
+      "order": 6,
+      "width": 274
+    },
+    {
+      "id": "64",
+      "name": "manteinance_types",
+      "x": 1223.606797749979,
+      "y": 1508.5409600397961,
+      "fields": [
+        {
+          "id": "65",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742359681344
+        },
+        {
+          "id": "66",
+          "name": "name",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359698568
+        },
+        {
+          "id": "67",
+          "name": "description",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359703178
+        },
+        {
+          "id": "68",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359712240
+        },
+        {
+          "id": "69",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359716273
+        }
+      ],
+      "indexes": [],
+      "color": "#8eb7ff",
+      "createdAt": 1742359681344,
+      "isView": false,
+      "order": 7
+    },
+    {
+      "id": "70",
+      "name": "manteinance_records",
+      "x": 423.606797749979,
+      "y": 1508.5409600397961,
+      "fields": [
+        {
+          "id": "71",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742359748816
+        },
+        {
+          "id": "72",
+          "name": "vehicle_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742359782043
+        },
+        {
+          "id": "73",
+          "name": "tractor_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359797220
+        },
+        {
+          "id": "74",
+          "name": "trailer_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359805830
+        },
+        {
+          "id": "75",
+          "name": "manteinance_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359816072
+        },
+        {
+          "id": "76",
+          "name": "odometer",
+          "type": {
+            "id": "float",
+            "name": "float"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359828297
+        },
+        {
+          "id": "77",
+          "name": "performed_by",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359845932
+        },
+        {
+          "id": "78",
+          "name": "notes",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359867609
+        },
+        {
+          "id": "79",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742359874572
+        },
+        {
+          "id": "80",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742359880548
+        }
+      ],
+      "indexes": [],
+      "color": "#ff6b8a",
+      "createdAt": 1742359748816,
+      "isView": false,
+      "order": 8
+    },
+    {
+      "id": "81",
+      "name": "manteinance_details",
+      "x": 823.606797749979,
+      "y": 1508.5409600397961,
+      "fields": [
+        {
+          "id": "82",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742359914624
+        },
+        {
+          "id": "83",
+          "name": "maintenance_record_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359929606
+        },
+        {
+          "id": "84",
+          "name": "maintenance_type_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359937497
+        },
+        {
+          "id": "85",
+          "name": "action_performed",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359944797
+        },
+        {
+          "id": "86",
+          "name": "parts_used",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359951306
+        },
+        {
+          "id": "87",
+          "name": "quality",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359957289
+        },
+        {
+          "id": "88",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359964514
+        },
+        {
+          "id": "89",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742359970851
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "createdAt": 1742359914624,
+      "isView": false,
+      "order": 9
+    },
+    {
+      "id": "90",
+      "name": "part_status",
+      "x": -23.606797749978853,
+      "y": 1326.905328038456,
+      "fields": [
+        {
+          "id": "91",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742360016588
+        },
+        {
+          "id": "92",
+          "name": "vehicle_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360041681
+        },
+        {
+          "id": "93",
+          "name": "tractor_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360052151
+        },
+        {
+          "id": "94",
+          "name": "trailer_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360058897
+        },
+        {
+          "id": "95",
+          "name": "part_type",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360064009
+        },
+        {
+          "id": "96",
+          "name": "current_status",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360073347
+        },
+        {
+          "id": "97",
+          "name": "last_checked_date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360087013
+        },
+        {
+          "id": "98",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360095180
+        },
+        {
+          "id": "99",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360097605
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "createdAt": 1742360016588,
+      "isView": false,
+      "order": 10
+    },
+    {
+      "id": "100",
+      "name": "checklist_templates",
+      "x": 1526.393202250021,
+      "y": 739.1200757459828,
+      "fields": [
+        {
+          "id": "101",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742360432177
+        },
+        {
+          "id": "102",
+          "name": "section",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360447349
+        },
+        {
+          "id": "103",
+          "name": "item",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360456712
+        },
+        {
+          "id": "104",
+          "name": "applies_to",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360471451
+        },
+        {
+          "id": "105",
+          "name": "is_mandatory",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360480979
+        },
+        {
+          "id": "106",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360495181
+        },
+        {
+          "id": "107",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1742360501079
+        }
+      ],
+      "indexes": [],
+      "color": "#ff9f74",
+      "createdAt": 1742360432177,
+      "isView": false,
+      "order": 11
+    },
+    {
+      "id": "108",
+      "name": "checklists",
+      "x": -23.606797749978966,
+      "y": 739.1200757459828,
+      "fields": [
+        {
+          "id": "109",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742360530485
+        },
+        {
+          "id": "110",
+          "name": "date",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360536746
+        },
+        {
+          "id": "111",
+          "name": "operator_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360549796
+        },
+        {
+          "id": "112",
+          "name": "tractor_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360559772
+        },
+        {
+          "id": "113",
+          "name": "trailer_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360566079
+        },
+        {
+          "id": "114",
+          "name": "start_mileage",
+          "type": {
+            "id": "float",
+            "name": "float"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360574571
+        },
+        {
+          "id": "115",
+          "name": "end_mileage",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360588259
+        },
+        {
+          "id": "116",
+          "name": "start_time",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360597651
+        },
+        {
+          "id": "117",
+          "name": "end_time",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360607109
+        },
+        {
+          "id": "118",
+          "name": "observations",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360614835
+        },
+        {
+          "id": "119",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360625596
+        },
+        {
+          "id": "120",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360634426
+        }
+      ],
+      "indexes": [],
+      "color": "#ffe374",
+      "createdAt": 1742360530485,
+      "isView": false,
+      "order": 12,
+      "width": 261
+    },
+    {
+      "id": "121",
+      "name": "checklist_results",
+      "x": 1126.393202250021,
+      "y": 739.1200757459828,
+      "fields": [
+        {
+          "id": "122",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742360667276
+        },
+        {
+          "id": "123",
+          "name": "checklist_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360669672
+        },
+        {
+          "id": "124",
+          "name": "checklist_template_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360689725
+        },
+        {
+          "id": "125",
+          "name": "result",
+          "type": {
+            "id": "varchar",
+            "name": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360695287
+        },
+        {
+          "id": "126",
+          "name": "comments",
+          "type": {
+            "id": "text",
+            "name": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360701191
+        },
+        {
+          "id": "127",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360708483
+        },
+        {
+          "id": "128",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742360713741
+        }
+      ],
+      "indexes": [],
+      "color": "#9ef07a",
+      "createdAt": 1742360667276,
+      "isView": false,
+      "order": 13
+    },
+    {
+      "id": "129",
+      "name": "account_limits",
+      "x": 76.39320225002108,
+      "y": 1839.1200757459828,
+      "fields": [
+        {
+          "id": "130",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742397617672
+        },
+        {
+          "id": "131",
+          "name": "max_tractors",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397645091
+        },
+        {
+          "id": "132",
+          "name": "max_trailers",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397698008
+        },
+        {
+          "id": "133",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397923095
+        },
+        {
+          "id": "134",
+          "name": "status",
+          "type": {
+            "id": "boolean",
+            "name": "boolean"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397979700
+        },
+        {
+          "id": "135",
+          "name": "created_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397934133
+        },
+        {
+          "id": "136",
+          "name": "updated_at",
+          "type": {
+            "id": "timestamp",
+            "name": "timestamp"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742397938703
+        }
+      ],
+      "indexes": [],
+      "color": "#c05dcf",
+      "createdAt": 1742397617672,
+      "isView": false,
+      "order": 14
+    },
+    {
+      "id": "137",
+      "name": "user_payments",
+      "x": -323.60679774997897,
+      "y": 1739.1200757459828,
+      "fields": [
+        {
+          "id": "138",
+          "name": "id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1742398090381
+        },
+        {
+          "id": "139",
+          "name": "user_id",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742398107114
+        },
+        {
+          "id": "140",
+          "name": "amount",
+          "type": {
+            "id": "decimal",
+            "name": "decimal"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742398111271
+        },
+        {
+          "id": "141",
+          "name": "created_at",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1742398123799
+        }
+      ],
+      "indexes": [],
+      "color": "#ff6b8a",
+      "createdAt": 1742398090382,
+      "isView": false,
+      "order": 15
+    }
+  ],
+  "relationships": [
+    {
+      "id": "142",
+      "name": "companies_partner_id_fk",
+      "sourceTableId": "1",
+      "targetTableId": "10",
+      "sourceFieldId": "5",
+      "targetFieldId": "11",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1742345707278,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "143",
+      "name": "tractors_brand_id_fk",
+      "sourceTableId": "19",
+      "targetTableId": "49",
+      "sourceFieldId": "24",
+      "targetFieldId": "50",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742345780946,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "144",
+      "name": "tractors_company_id_fk",
+      "sourceTableId": "19",
+      "targetTableId": "1",
+      "sourceFieldId": "23",
+      "targetFieldId": "2",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742345783429,
+      "diagramId": "1bvmjddu38oa"
+    },
+    {
+      "id": "145",
+      "name": "trailers_id_fk",
+      "sourceTableId": "31",
+      "targetTableId": "55",
+      "sourceFieldId": "32",
+      "targetFieldId": "58",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742356400716
+    },
+    {
+      "id": "146",
+      "name": "tractor_trailer_assignments_tractor_id_fk",
+      "sourceTableId": "55",
+      "targetTableId": "19",
+      "sourceFieldId": "57",
+      "targetFieldId": "20",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742356418151
+    },
+    {
+      "id": "147",
+      "name": "trailers_company_id_fk",
+      "sourceTableId": "31",
+      "targetTableId": "1",
+      "sourceFieldId": "34",
+      "targetFieldId": "2",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742356491107
+    },
+    {
+      "id": "148",
+      "name": "companies_user_id_fk",
+      "sourceTableId": "1",
+      "targetTableId": "39",
+      "sourceFieldId": "6",
+      "targetFieldId": "40",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742356661735
+    },
+    {
+      "id": "149",
+      "name": "manteinance_details_maintenance_record_id_fk",
+      "sourceTableId": "81",
+      "targetTableId": "70",
+      "sourceFieldId": "83",
+      "targetFieldId": "71",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1742360148307
+    },
+    {
+      "id": "150",
+      "name": "manteinance_details_maintenance_type_id_fk",
+      "sourceTableId": "81",
+      "targetTableId": "64",
+      "sourceFieldId": "84",
+      "targetFieldId": "65",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742360162320
+    },
+    {
+      "id": "151",
+      "name": "manteinance_records_tractor_id_fk",
+      "sourceTableId": "70",
+      "targetTableId": "19",
+      "sourceFieldId": "73",
+      "targetFieldId": "20",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360220593
+    },
+    {
+      "id": "152",
+      "name": "manteinance_records_trailer_id_fk",
+      "sourceTableId": "70",
+      "targetTableId": "31",
+      "sourceFieldId": "74",
+      "targetFieldId": "32",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360229255
+    },
+    {
+      "id": "153",
+      "name": "part_status_tractor_id_fk",
+      "sourceTableId": "90",
+      "targetTableId": "19",
+      "sourceFieldId": "93",
+      "targetFieldId": "20",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360355165
+    },
+    {
+      "id": "154",
+      "name": "part_status_trailer_id_fk",
+      "sourceTableId": "90",
+      "targetTableId": "31",
+      "sourceFieldId": "94",
+      "targetFieldId": "32",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360362831
+    },
+    {
+      "id": "155",
+      "name": "checklist_results_checklist_id_fk",
+      "sourceTableId": "121",
+      "targetTableId": "108",
+      "sourceFieldId": "123",
+      "targetFieldId": "109",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360760927
+    },
+    {
+      "id": "156",
+      "name": "checklist_results_checklist_template_id_fk",
+      "sourceTableId": "121",
+      "targetTableId": "100",
+      "sourceFieldId": "124",
+      "targetFieldId": "101",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360766955
+    },
+    {
+      "id": "157",
+      "name": "checklists_operator_id_fk",
+      "sourceTableId": "108",
+      "targetTableId": "39",
+      "sourceFieldId": "111",
+      "targetFieldId": "40",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360827993
+    },
+    {
+      "id": "158",
+      "name": "checklists_tractor_id_fk",
+      "sourceTableId": "108",
+      "targetTableId": "19",
+      "sourceFieldId": "112",
+      "targetFieldId": "20",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360841233
+    },
+    {
+      "id": "159",
+      "name": "checklists_trailer_id_fk",
+      "sourceTableId": "108",
+      "targetTableId": "31",
+      "sourceFieldId": "113",
+      "targetFieldId": "32",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742360857961
+    },
+    {
+      "id": "160",
+      "name": "account_limits_user_id_fk",
+      "sourceTableId": "129",
+      "targetTableId": "39",
+      "sourceFieldId": "133",
+      "targetFieldId": "40",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1742397971110
+    },
+    {
+      "id": "161",
+      "name": "user_payments_user_id_fk",
+      "sourceTableId": "137",
+      "targetTableId": "39",
+      "sourceFieldId": "139",
+      "targetFieldId": "40",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1742398165409
+    }
+  ],
+  "dependencies": []
+}
